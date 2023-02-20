@@ -24,6 +24,9 @@ public class ReviewDao {
 
 	public Review getReviewByID(int id) {
 		Review r1 = entityManager.find(Review.class, id);
+		System.out.println(r1.getId());
+		System.out.println(r1.getRating());
+		System.out.println(r1.getResponse());
 		return r1;
 	}
 

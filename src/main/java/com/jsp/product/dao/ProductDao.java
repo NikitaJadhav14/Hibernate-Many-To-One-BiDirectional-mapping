@@ -25,6 +25,9 @@ public class ProductDao {
 
 	public Product getproductByID(int id) {
 		Product p1 = entityManager.find(Product.class, id);
+		System.out.println(p1.getP_id());
+		System.out.println(p1.getP_name());
+		System.out.println(p1.getP_price());
 		return p1;
 	}
 
